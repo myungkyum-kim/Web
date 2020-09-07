@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <title> Twich player powered by SunnyFive </title>
+    <meta charset="utf-8">
+    <body>
+        <a href="http://sunnyfive.net/" target="_blank" title="Go to Web Site">Sunny Five - Make artficial Sunlight</a>
+        <br><br><br><br>
+        <!-- Add a placeholder for the Twitch embed -->
+        <div id="twitch-embed"></div>
+
+        <!-- Load the Twitch embed script -->
+        <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+        <script type="text/javascript">
+            new Twitch.Player("twitch-embed", {
+                channel: "sunny5ive",
+                height: "378",
+                width: "620"
+            });
+        </script>
+    </body>
+</html>
